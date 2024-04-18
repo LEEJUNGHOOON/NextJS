@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 import styles from "../../styles/home.module.css";
 import Movie from "../../components/movie";
+import { API_URL } from "../constants";
 
 export const metadata: Metadata = {
   title: "Home",
 };
-export const API_URL = "https://nomad-movies.nomadcoders.workers.dev/movies";
 
 async function getMovies() {
   // await new Promise((resolve)=>{setTimeout(resolve,1000)})//시간을 지연시키기위한 트릭
